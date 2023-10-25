@@ -1,7 +1,7 @@
 name: Linting Workflow
 
 on:
-  push:
+  pull_request:
     branches:
       - main # You can change this to your default branch
 
