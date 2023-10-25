@@ -1,0 +1,21 @@
+name: Linting Workflow
+
+on:
+  pull_request:
+    branches:
+      - main # You can change this to your default branch
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+    
+    - name: Install dependencies
+      run: npm install # Or use yarn if your project uses yarn
+    
+    - name: Run ESLint
+      run: npm run test # Replace this with the command to run your linting tool
+
