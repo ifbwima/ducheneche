@@ -5,6 +5,6 @@ import '@testing-library/jest-dom'
 
 test("renders header text", () => {
   render(<Home />);
-  const headerElement = screen.getByText(/Test de test/i);
+  const headerElement = screen.getByText(/Test de test boudin/i);
   expect(headerElement).toBeInTheDocument();
 });
